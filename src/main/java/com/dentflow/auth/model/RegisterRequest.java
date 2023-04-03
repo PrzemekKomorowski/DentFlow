@@ -1,4 +1,4 @@
-package com.dentflow.auth;
+package com.dentflow.auth.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,8 +9,9 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class AuthenticationResponses {
+public class RegisterRequest {
+    private String firstName;
+    private String lastName;
     private String email;
-    private String role;
-    private String token;
+    private String password;
 }

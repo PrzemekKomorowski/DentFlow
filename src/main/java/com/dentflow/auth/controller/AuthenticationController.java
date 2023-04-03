@@ -1,6 +1,9 @@
-package com.dentflow.auth;
+package com.dentflow.auth.controller;
 
-import jakarta.servlet.http.HttpServletRequest;
+import com.dentflow.auth.model.AuthenticationRequest;
+import com.dentflow.auth.model.AuthenticationResponses;
+import com.dentflow.auth.service.AuthenticationService;
+import com.dentflow.auth.model.RegisterRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
